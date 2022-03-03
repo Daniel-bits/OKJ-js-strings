@@ -13,10 +13,10 @@
 <h4>Adjon meg egy rövid mondatot!</h4>
 
 
-<label for="szoveg">Bevitel:
-<input id="szoveg" type="text" maxlength='20' placeholder="" name="szoveg">
+<label>
+<input id="szoveg" type="text" maxlength='20' placeholder="" name="szoveg" required>
 </label>
-<br>
+
 
 <button type="button" onclick="kiszamit();">Átalakít</button>
 
@@ -30,7 +30,7 @@ let kiszamit = function() {
 const str = document.getElementById('szoveg').value;
 
 function calc(str) {
-	if (!str) alert("irjon be vmit");
+	if (!str) return;
 	let newStr;
 	newStr = str[0].toUpperCase() + str.substring(1);
 	return newStr;

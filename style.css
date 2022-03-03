@@ -2,17 +2,14 @@ input {
 border: 3px solid lightgray;
 border-radius: 10px;
 outline: none;
-border-bottom: 3px solid lightgray;
 padding: 5px 5px;
-box-sizing: border-box;
+margin: 0 10px 20px 0;
 }
 button {
-display: block;
-border: 2px solid antiquewhite;
-border-radius: 8px;
+border: 2px solid lightcyan;
+border-radius: 4px;
 background: green;
-color: yellow;
+color: antiquewhite;
 font-size: 18px;
-margin: 60px auto 15px;
-padding: 15px;
+padding: 5px;
 }

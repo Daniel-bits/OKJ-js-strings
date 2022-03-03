@@ -4,16 +4,33 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>*{text-align: center} label,fieldset {color:white;}</style>
 	<title>First Name - Last Name </title>
 </head>
 <body bgcolor="#000000">
-	<p style="color:white;">The End
-	</p>
+	<form action="feladat_2.html" method="POST">
+		<fieldset>
+		  <legend>Személynév</legend>
+		  <label for="vnev">Vezetéknév:</label>
+		  <input type="text" name="vnev" value="" id="vnev" maxlength="10" size="10"/>
+		  <label for="knev">Keresztnév:</lable>
+		  <input type="text" name="knev" value="" id="knev" maxlength="25" size="10"/>
+		  <input type="submit" value="Elküld" />
+		</fieldset>
+	</form>
+
 		<script>
-			const firstname = prompt('Kérem a keresztnevét','');
-			const surname = prompt('Kérem a családi nevét','');
-			let fullname = firstname.concat(" ", surname);
-			alert(fullname);
+			const nameForm = document.querySelector('form');
+
+			nameForm.onsubmit = () => {
+			const firstname = document.getElementById('vnev').value;
+			const surname = document.getElementById('knev').value;
+			//arra jutottam hogy ehhez vmi adatbázis kéne validálni
+			firstname = firstname[0].toUpperCase();
+			surname = surname[0].toUpperCase();
+			const fullname = firstname.concat(" ", surname);
+			alert(fullname); return false;
+		}
 		</script>
 </body>
 </html>

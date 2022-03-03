@@ -1,4 +1,4 @@
-/*Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.*/
+/*Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength  replaces the end of str with the ellipsis character "...", to make its length equal to maxlength.*/
 
 function truncate(str,maxlength) {
 let truncated = "";

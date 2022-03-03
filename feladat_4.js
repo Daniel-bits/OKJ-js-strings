@@ -1,8 +1,8 @@
-/* Write a function checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false. The function must be case-insensitive. */
+/* Write a function checkSpam(str) that returns true if str contains ï¿½viagraï¿½ or ï¿½XXXï¿½, otherwise false. The function must be case-insensitive. */
 
 let checkSpam = function(str) {
 str = str.toLowerCase();
-const result = (str.includes('viagra') || str.includes('xxx')) ? true : false;
+const result = (str.includes('viagra') || str.includes('xxx')) ? true : false;
 return result;
 }
 

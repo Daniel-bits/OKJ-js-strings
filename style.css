@@ -1,0 +1,18 @@
+input {
+border: 3px solid lightgray;
+border-radius: 10px;
+outline: none;
+border-bottom: 3px solid lightgray;
+padding: 5px 5px;
+box-sizing: border-box;
+}
+button {
+display: block;
+border: 2px solid antiquewhite;
+border-radius: 8px;
+background: green;
+color: yellow;
+font-size: 18px;
+margin: 60px auto 15px;
+padding: 15px;
+}

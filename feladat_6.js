@@ -1,6 +1,6 @@
 ﻿const but = document.querySelector("[type='button']");
 
-but.onclick = function searchText(event) {
+but.onclick = function searchText() {
 
 const text = document.getElementById('szoveg').value;
 const word = document.getElementById('szoveg2').value;

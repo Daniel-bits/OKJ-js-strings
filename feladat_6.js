@@ -2,16 +2,15 @@
 
 but.onclick = function searchText() {
 
-const text = document.getElementById('szoveg').value;
-const word = document.getElementById('szoveg2').value;
-word = String(word);
-text = String(text);
+let text = document.getElementById('szoveg').value;
+let word = document.getElementById('szoveg2').value;
+
 if (!validate(word,text)) return;
 
 	if (text.indexOf(word) !== -1)
 		alert("Szerepel az adott szó a keresett szövegben! ");
 	else
-		alert('Nem szerepel a megadott szövegben a megadott szó! ');
+		alert('Nem szerepel a szövegben a megadott szó! ');
 }
 
 

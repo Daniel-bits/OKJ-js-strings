@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,37 @@
 	<title>First Char</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+	<h4>Adjon meg egy rövid mondatot!</h4>
 
 
-<h4>Adjon meg egy rövid mondatot!</h4>
+	<label>
+		<input id="szoveg" type="text" maxlength='20' placeholder="" name="szoveg" required>
+	</label>
 
 
-<label>
-<input id="szoveg" type="text" maxlength='20' placeholder="" name="szoveg" required>
-</label>
+	<button type="button" onclick="kiszamit();">Átalakít</button>
 
 
-<button type="button" onclick="kiszamit();">Átalakít</button>
-
-
-<p id="output"><span></span></p>
+	<p id="output"><span></span></p>
 </body>
 <script>
-/* Write a function ucFirst(str) that returns the string str with the uppercased first character */
+	/* Write a function ucFirst(str) that returns the string str with the uppercased first character */
 
-let kiszamit = function() {
-const str = document.getElementById('szoveg').value;
+	let kiszamit = function () {
+		const str = document.getElementById('szoveg').value;
 
-function calc(str) {
-	if (!str) return;
-	let newStr;
-	newStr = str[0].toUpperCase() + str.substring(1);
-	return newStr;
-}
+		function calc(str) {
+			if (!str) return;
+			let newStr;
+			newStr = str[0].toUpperCase() + str.substring(1);
+			return newStr;
+		}
 
-const op = document.querySelector("#output span");
-op.textContent = calc(str);
-}
-
-
-
+		const op = document.querySelector("#output span");
+		op.textContent = calc(str);
+	}
 </script>
+
 </html>

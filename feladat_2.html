@@ -19,18 +19,18 @@
 		</fieldset>
 	</form>
 
-		<script>
-			const nameForm = document.querySelector('form');
+	<script>
+		const nameForm = document.querySelector('form');
 
-			nameForm.onsubmit = () => {
-			const firstname = document.getElementById('vnev').value;
-			const surname = document.getElementById('knev').value;
-			//arra jutottam hogy ehhez vmi adatbázis kéne validálni
-			firstname = firstname[0].toUpperCase();
-			surname = surname[0].toUpperCase();
-			const fullname = firstname.concat(" ", surname);
-			alert(fullname); return false;
-		}
-		</script>
+		nameForm.onsubmit = () => {
+		const firstname = document.getElementById('vnev').value;
+		const surname = document.getElementById('knev').value;
+		//ehhez vmi adatbázis kéne validálni
+		firstname = firstname[0].toUpperCase();
+		surname = surname[0].toUpperCase();
+		const fullname = firstname.concat(" ", surname);
+		alert(fullname);
+	}
+	</script>
 </body>
 </html>

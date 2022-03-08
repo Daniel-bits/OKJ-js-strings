@@ -6,21 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>7,8,9,10</title>
 	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 	<h4>Adjon meg egy szöveget!</h4>
 
 	<label>
-		<input id="szoveg" type="text" placeholder="Lorem ipsum doloret et ..." name="szoveg" required>
+		<input id="szoveg" type="text" size='70'placeholder="Lorem ipsum doloret et ..." name="szoveg" required>
 	</label>
 
-	<button type="button">Vizsgál</button>
+	<button id="vizsgal" type="button">Vizsgál</button>
 
-	<button type="button">Átalakít</button>
+	<button id="atalakit" type="button">Titkosít</button>
 
-	<button type="button">Kiír</button>
+	<button id="kiir" type="button">UTF-16 Kiír</button>
 
-	<p>Eredmény:<span id="output"></span></p>
+	<p id="output">Eredmény: <span></span></p>
+
+
+<script src="feladat_7.js"></script>
+<script src="feladat_8.js"></script>
+<!-- <script src="feladat_9.js"></script> -->
 </body>
-<script src="feladat_7.js">
-</script>
+</html>

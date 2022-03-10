@@ -1,17 +1,17 @@
-const anotherInpt = document.querySelector("input");
+﻿const inpt2 = document.querySelector("input");
 const btn2 = document.getElementById("atalakit");
 
 
-btn2.addEventListener('click', enCipher);
+btn2.addEventListener('click', encipher);
 
-function enCipher() { //ezt általánosabban írtam meg de nem lehet paramétereket átadni az Listenerben!
+function encipher() { //ezt általánosabban írtam meg de nem lehet paramétereket átadni az Listenerben!
 
-	const thatStr = String(anotherInpt.value).trim();
-	let bufferArr = [];
+	const givenStr = String(inpt2.value).trim();
+	let bufferStr = '';
 
-	for (let i = 0; i < thatStr.length; i++) {
-		bufferArr[i] = thatStr.codePointAt(i);
-
+	for (let i = 0; i < givenStr.length; i++) {
+		bufferStr += givenStr[i].codePointAt();
+		bufferStr += " ";
 	}
-	output.textContent = bufferArr;
+	output.textContent = bufferStr;
 }
